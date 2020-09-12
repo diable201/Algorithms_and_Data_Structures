@@ -36,7 +36,7 @@ int main() {
             now.pop();
         }
         if (cnt > 1) {
-            cout << 0;
+            cout << "0";
             return 0;
         }
     }
