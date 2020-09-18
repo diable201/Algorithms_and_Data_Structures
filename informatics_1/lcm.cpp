@@ -7,7 +7,7 @@ int gcd(long long int a, long long int b) {
 }
 
 int lcm(long long int a, long long int b) {
-    return (a * b) / gcd(a, b);
+    return (a / gcd(a, b)) * b;
 }
 
 int main() {
