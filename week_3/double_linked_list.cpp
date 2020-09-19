@@ -7,7 +7,7 @@ class Node {
     int data;
     Node *next, *prev;
 
-    Node (int data) {
+    Node(int data) {
         this->data = data;
         this->next = NULL;
         this->prev = NULL;
@@ -38,33 +38,33 @@ class LinkedList {
     void push_front(int data) {
         Node *node = new Node(data);
         if (front == NULL) {
-            tail = node;
             front = node;
+            tail = node;            
         } else {
-            front->next = node;
-            node->prev = front;
+            node->next = front;
+            front->prev = node;
             front = node;
         }
     }
 
     void pop_back() {
-        if (tail == NULL) 
+        if (tail == NULL)
             return;
         tail = tail->prev;
-
-        if (tail != NULL) 
+        
+        if (tail != NULL)
             tail->next = NULL;
-        else 
-            front = NULL;
+        else
+            front = NULL; 
     }
 
     void pop_front() {
-        if (front == NULL) 
+        if (front == NULL)
             return;
         front = front->next;
         if (front != NULL)
             front->prev = NULL;
-        else
+        else 
             tail = NULL;
     }
 
@@ -82,13 +82,13 @@ class LinkedList {
         while (node != NULL) {
             if (node->data == data)
                 return node;
-            node = node->next;
-        } 
+            node = node->next;            
+        }
         return NULL;
     }
 
     void insert_node(Node *a, int data) {
-        if (a == tail)
+        if (a == tail) 
             push_back(data);
         else {
             Node *b = a->next;
@@ -100,11 +100,11 @@ class LinkedList {
         }
     }
 
-    void del_node(Node *node) {
+    void delete_node(Node *node) {
         if (node == tail)
-            pop_back();
+            this->pop_back();
         else if (node == front)
-            pop_front();
+            this->pop_front();
         else {
             Node *a = node->prev;
             Node *b = node->next;
@@ -116,13 +116,19 @@ class LinkedList {
 
 int main() {
     LinkedList *ll = new LinkedList();
-    ll->push_back(5);
-    ll->push_back(6);
-    ll->push_front(7);
-    ll->push_front(96);
+    ll->push_back(5); 
+    ll->push_back(10);
+    ll->push_front(20);
+    ll->push_front(30);
+    ll->print(); // 30 20 45 5 10
+    Node *node = ll->find_node(20);
+    if (node != NULL) {
+        ll->insert_node(node, 45);
+        ll->print();
+    }
+    node = ll->find_node(5);
+    delete node;
+    ll->delete_node(node);
     ll->print();
-    cout << ll->front->data << " " << ll->tail->data << '\n';
-    Node *node = ll->find_node(6);
-    ll->insert_node(node, 100);
     return 0;
 }
