@@ -26,6 +26,12 @@
 *.a
 *.lib
 
+#CMakeList
+CMakeLists.txt
+.vscode
+.idea
+cmake-build-debug
+
 # Executables
 *.exe
 *.out
