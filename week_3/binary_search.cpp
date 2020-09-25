@@ -6,7 +6,7 @@ using namespace std;
 int bin_search(vector<int> &a, int k) {
     int l = 0;
     int r = a.size() - 1;
-    while(l < r) {
+    while (l < r) {
         int m = (l + r) / 2;
         if (a[m] == k)
             return m;
