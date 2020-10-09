@@ -26,7 +26,7 @@
 *.a
 *.lib
 
-#CMakeList
+# CMakeList
 CMakeLists.txt
 .vscode
 .idea
@@ -36,3 +36,6 @@ cmake-build-debug
 *.exe
 *.out
 *.app
+
+# Other
+.DS_Store

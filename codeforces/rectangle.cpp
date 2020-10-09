@@ -20,11 +20,10 @@ int main() {
     while (r > l + 1) {
         long long m = (l + r) / 2;
         long long s = (m / w) * (m / h);
-        if (good(w, h, n, m)) {
+        if (good(w, h, n, m)) 
             r = m;
-        } else {
+        else 
             l = m;
-        }
     }
     cout << r << '\n';
     return 0;

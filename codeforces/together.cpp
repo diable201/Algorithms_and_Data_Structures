@@ -25,5 +25,5 @@ int main() {
 			L = mid;
 		}
 	}
-	cout << fixed << setprecision(6) << L << endl;
+	cout << fixed << setprecision(6) << L << '\n';
 }
