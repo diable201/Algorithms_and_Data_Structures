@@ -15,16 +15,20 @@ int main() {
 	vector<int> c(n + m);
 	while (i != n and j != m) {
 		if (a[i] < b[j]) {
-			c[i + j] = a[i++];
+			c[i + j] = a[i];
+			i++;
 		} else {
-			c[i + j] = b[j++];
+			c[i + j] = b[j];
+			j++;
 		}
 	}
 	while (i != n) {
-		c[i + j] = a[i++];
+		c[i + j] = a[i];
+		i++;
 	}
 	while (j != m) {
-		c[i + j] = b[j++];
+		c[i + j] = b[j];
+		j++;
 	}
 	for (int i = 0; i < n + m; i++) {
 		cout << c[i] << " ";
