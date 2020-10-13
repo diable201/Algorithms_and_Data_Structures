@@ -1,20 +1,22 @@
 #include <iostream>
 
+#define ll long long
+
 using namespace std;
 
-int main() {
-    int n;
-    bool isPrime = true;
-    cin >> n;
-    for (int i = 2; i * i <= n; i++) {
-        if (n % i == 0){
-            isPrime = false;
-            break;
-        }
+bool isPrime(ll n) {
+    if (n == 1)
+        return false;
+    for (ll i = 2; i * i <= n; i++) {
+        if (n % i == 0)
+            return false;
     }
-    if (isPrime == true)
-        cout << "prime" << '\n';
-    else 
-        cout << "composite" << '\n';   
+    return true;
+}
+
+int main() {
+    ll n;
+    cin >> n;
+    isPrime(n) ? cout << "prime\n" : cout << "composite\n"; 
     return 0;
 }
