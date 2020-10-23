@@ -1,14 +1,15 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 
 using namespace std;
 
 class Heap {
     public:
     vector<int> a;
-    int sz;
+    int size;
 
     Heap() {
-        sz=0;
+        size = 0;
     }
 
     int parent(int i) {
@@ -25,8 +26,8 @@ class Heap {
 
     void add(int x) {
         a.push_back(x);
-        sz++;
-        int i = sz - 1;
+        size++;
+        int i = size - 1;
         while (i > 0 and a[parent(i)] < a[i]){
             swap(a[parent(i)],a[i]);
             i = parent(i);

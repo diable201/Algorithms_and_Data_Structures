@@ -3,7 +3,7 @@
 
 using namespace std;
 
-class MinHeap {
+class Heap {
     public:
     vector<int> a;
 
@@ -76,18 +76,17 @@ class MinHeap {
 };
 
 int main() {
-    MinHeap *min_heap = new MinHeap();
+    Heap *heap = new Heap();
     uint32_t n;
     cin >> n;
     vector<int> sorted;
     for (int i = 0; i < n; i++) {
         int k;
         cin >> k;
-        min_heap->insert(k);
+        heap->insert(k);
     }
-
     for (int i = 0; i < n; i++) 
-        sorted.push_back(min_heap->extractMin());        
+        sorted.push_back(heap->extractMin());        
 
     for (int i = 0; i < n; i++)
         cout << sorted[i] << " ";
