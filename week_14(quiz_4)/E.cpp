@@ -2,8 +2,8 @@
 
 using namespace std;
 
-vector <int> g[200002];
-int u[200002];
+vector <int> g[200001];
+int u[200001];
 queue <int> q;
 
 int main () {
@@ -27,13 +27,13 @@ int main () {
     while (!q.empty()) {
         int v = q.front();
         q.pop();
-        for (int i = 1; i <= g[v][i]; i++) {
-            if(!u[i]) {
-                u[i] = u[v] + 1;
-                q.push(i);
+        for (auto to : g[v]) {
+            if (!u[to]) {
+                u[to] = u[v] + 1;
+                q.push(to);
             }
         }
     }
-    cout << min(u[n], u[n + n]) - 1;
+    cout << min(u[n], u[n + n]) - 1 << '\n';
     return 0;
 }
