@@ -1,4 +1,5 @@
 stack = []
+result = int
 for element in input().split():
     if element in "+*-":
         a = stack[-2]
