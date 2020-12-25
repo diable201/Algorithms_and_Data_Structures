@@ -5,7 +5,7 @@ using namespace std;
 
 bool isOK(string s) {
     stack<char> st;
-    for (int i = 0; i < s.size(); i++) {
+    for (size_t i = 0; i < s.size(); i++) {
         if (s[i] == '(' || s[i] == '{' || s[i] == '[')
             st.push(s[i]);
         else {
@@ -27,8 +27,8 @@ int main() {
     string s;
     cin >> s;
     if (isOK(s))
-        cout << "yes" << '\n';
+        cout << "yes\n";
     else
-        cout << "no" << '\n';
+        cout << "no\n";
     return 0;
 }

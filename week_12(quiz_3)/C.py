@@ -1,11 +1,3 @@
-def longest_substring(find, arr):
-    if len(arr) < 1 and len(find) < 1:
-        return False
-    for i in range(len(arr)):
-        if find not in arr[i]:
-            return False
-    return True
-
 s_array = []
 num = int(input())
 for i in range(num):

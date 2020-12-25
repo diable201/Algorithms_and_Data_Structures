@@ -30,3 +30,4 @@ for x in b:
         print(right + 1, right + 1)
     else:
         print(right + 1, left_1 + 1)
+        

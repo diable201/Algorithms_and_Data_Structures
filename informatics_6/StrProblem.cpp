@@ -80,8 +80,8 @@ void find_words(TNode *node, string &s) {
     int i = 0;
     while (i < s.length()) {
         char c = s[i] - 'a';
-            if (!node->ed[c]) {
-                node = get_link(node);
+        if (!node->ed[c]) {
+            node = get_link(node);
             if (!node) {
                 node = trie;
                 i++;
@@ -121,7 +121,7 @@ int main() {
     }
     find_words(trie, s);
     for (int i = 0; i < n; i++) {
-            cout << ans[i].size();
+        cout << ans[i].size();
         for (auto e : ans[i])
             cout << " " << e + 1;
         cout << '\n';
