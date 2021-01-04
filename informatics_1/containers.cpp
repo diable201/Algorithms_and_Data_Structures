@@ -70,8 +70,7 @@ int main() {
             st[1].pop();
         }
     }
-    for (int i = 0; i < answer.size(); ++i){
+    for (size_t i = 0; i < answer.size(); i++)
         cout << answer[i].first << " " << answer[i].second << '\n';
-    }
     return 0;
 }

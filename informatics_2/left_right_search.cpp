@@ -22,11 +22,10 @@ int find_lower(vector<int> &v, int x) { // max a[i] <= x
     int r = (int)v.size(); // a[r] > x
     while (r > l + 1) {
         int m = (l + r) / 2; // l < m < r
-        if (v[m] <= x) {
+        if (v[m] <= x)
             l = m;
-        } else {
+        else 
             r = m;
-        }
     }
     return l;
 }
@@ -36,11 +35,10 @@ int find_upper(vector<int> &v, int x) { // min a[i] >= x
     int r = (int)v.size(); // a[r] >= x
     while (r > l + 1) {
         int m = (l + r) / 2; // l < m < r
-        if (v[m] < x) {
+        if (v[m] < x) 
             l = m;
-        } else {
+        else 
             r = m;
-        }
     }
     return r;
 }

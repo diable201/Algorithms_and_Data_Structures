@@ -24,7 +24,7 @@ int main() {
         maximum[j] = -1000;
         for (int i = 0; i < n; i++)
             if (a[i][j] > maximum[j]) 
-            maximum[j] = a[i][j];
+                maximum[j] = a[i][j];
     }
 
     for (int i = 0; i < n; i++)

@@ -91,17 +91,13 @@ int main() {
     min_heap->print();
     min_heap->increaseKey(1, 18);
     min_heap->print();
-
     int n = min_heap->a.size();
     vector<int> sorted;
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++)
         sorted.push_back(min_heap->extractMin());        
-    }
-
     for (int i = 0; i < n; i++)
         cout << sorted[i] << " ";
     return 0;
 }
 
 // 6 8 6 15 10 18 9 
-// 

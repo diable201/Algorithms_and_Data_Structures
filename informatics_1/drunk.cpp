@@ -18,7 +18,7 @@ int main() {
         cin >> k;
         second_player.push_back(k);
     }
-    while (first_player.size() != 0 && second_player.size() != 0) {
+    while (first_player.size() != 0 and second_player.size() != 0) {
         n++;
         int a = first_player.front();
         first_player.pop_front();
@@ -26,17 +26,17 @@ int main() {
         int b = second_player.front();
         second_player.pop_front();
 
-        if ((a > b && a != 9) || (a == 9 && b != 0) || (a == 0 && b == 9)) {
-        first_player.push_back(a);
-        first_player.push_back(b);
+        if ((a > b and a != 9) or (a == 9 and b != 0) or (a == 0 and b == 9)) {
+            first_player.push_back(a);
+            first_player.push_back(b);
         } else {
-        second_player.push_back(a);
-        second_player.push_back(b);
+            second_player.push_back(a);
+            second_player.push_back(b);
         }
         if (n == 1000000) {
-        cout << "botva\n" ;
-        isBotva = true;
-        break;
+            cout << "botva\n" ;
+            isBotva = true;
+            break;
         }
     }
     if (!isBotva) {
