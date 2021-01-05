@@ -9,43 +9,43 @@ An algorithm is a specific procedure for solving a well-defined computational pr
 This repository contains all the code for the course "Algorithms and Data Structures" in the fall semester 2020 year in KBTU. This repository includes both the code from the lectures and the codes of labs and contests.
 
 ## Lectures
-[Week $01$ - **Data Structures**](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/week_01)
+[Week 01 - **Data Structures**](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/week_01)
 
-[Week $02$ - **Linked List**](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/week_02)
+[Week 02 - **Linked List**](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/week_02)
 
-[Week $03$ - **Binary Search**](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/week_03)
+[Week 03 - **Binary Search**](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/week_03)
 
-[Week $05$ - **BST**](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/week_05)
+[Week 05 - **BST**](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/week_05)
 
-[Week $06$ - **Heap**](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/week_06)
+[Week 06 - **Heap**](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/week_06)
 
-[Week $07$ - **QuickSort, MergeSort**](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/week_07)
+[Week 07 - **QuickSort, MergeSort**](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/week_07)
 
-[Week $09$ - **Hash**](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/week_09)
+[Week 09 - **Hash**](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/week_09)
 
-[Week $10$ - **RabinKarp, KMP**](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/week_10)
+[Week 10 - **RabinKarp, KMP**](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/week_10)
 
-[Week $11$ - **Trie**](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/week_11)
+[Week 11 - **Trie**](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/week_11)
 
-[Week $13$ - **Graphs**](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/week_13)
+[Week 13 - **Graphs**](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/week_13)
 
-[Week $15$ - **Bellman Ford, Dijkstra algorithm**](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/week_15)
+[Week 15 - **Bellman Ford, Dijkstra algorithm**](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/week_15)
 
 ## Laboratory Works
 
-[Laboratory work $1$](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/informatics_1) - **Stack, Deque, Queue**
+[Laboratory work 1](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/informatics_1) - **Stack, Deque, Queue**
 
-[Laboratory work $2$](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/informatics_2) - **Linear Search, Binary Search**
+[Laboratory work 2](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/informatics_2) - **Linear Search, Binary Search**
 
-[Laboratory work $3$](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/informatics_3) - **Binary Tree. Binary Search Tree (BST).**
+[Laboratory work 3](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/informatics_3) - **Binary Tree. Binary Search Tree (BST).**
 
-[Laboratory work $4$](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/informatics_4) - **Heap, HeapSort**
+[Laboratory work 4](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/informatics_4) - **Heap, HeapSort**
 
-[Laboratory work $5$](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/informatics_5) - **Hashes, Rabin-Karp algo and KMP**
+[Laboratory work 5](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/informatics_5) - **Hashes, Rabin-Karp algo and KMP**
 
-[Laboratory work $6$](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/informatics_6) - **Trie**
+[Laboratory work 6](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/informatics_6) - **Trie**
 
-[Laboratory work $7$](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/informatics_7) - **Graphs. DFS, BFS, Topological Sort**
+[Laboratory work 7](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/informatics_7) - **Graphs. DFS, BFS, Topological Sort**
 
 ## Contests
 [Contest 01 - **STL, Binary Search Algorithm**](https://github.com/diable201/Algorithms_and_Data_Structures/tree/master/week_04(quiz_1))
