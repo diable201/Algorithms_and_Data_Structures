@@ -147,7 +147,8 @@ class BST {
                 node->data = tmp->data;
                 node->left = deleteNode(node->left, tmp->data);
             }
-        } return node;
+        } 
+        return node;
     } 
 };
 

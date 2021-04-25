@@ -3,7 +3,7 @@
 
 using namespace std;
 
-queue<pair<int, int>> q;
+queue<pair<int, int> > q;
 int used[1000];
 // int c[1000];
 // a && b > 0
