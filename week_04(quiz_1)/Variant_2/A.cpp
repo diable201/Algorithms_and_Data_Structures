@@ -16,20 +16,19 @@ struct Node {
 // your code goes here
 
 Node* cyclicShift(Node* head, int k) {
-      Node* curr = head;
-      int count = 1; 
-      while (count < k && curr != NULL) { 
+    Node* curr = head;
+    int count = 1; 
+    while (count < k && curr != NULL) { 
         curr = curr->next; 
         count++; 
-      }	
-      Node* nNode = curr;
-      while(curr->next != NULL) 
-    curr = curr->next;
-      curr->next = head;
-      head = nNode->next;
-      nNode->next = NULL;
-      return head;
-
+    }	
+    Node* nNode = curr;
+    while(curr->next != NULL) 
+        curr = curr->next;
+    curr->next = head;
+    head = nNode->next;
+    nNode->next = NULL;
+    return head;
 }
 
 void print(Node* head) {
@@ -56,7 +55,6 @@ int main() {
             cur = cur->next;
         }
     }
-
     head = cyclicShift(head, k);
     print(head);
 }
