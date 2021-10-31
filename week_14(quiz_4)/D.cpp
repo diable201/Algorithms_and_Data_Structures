@@ -11,7 +11,7 @@ stack<int> answer;
 
 void dfs(int v) {
     used[v] = true;
-    for (size_t i = 0; i < g[v].size(); i++) 
+    for (size_t i = 0; i < g[v].size(); i++)
         if (used[g[v][i]] == 0)
             dfs(g[v][i]);
     answer.push(v);
@@ -27,12 +27,12 @@ int main() {
         x--; y--;
         g[x].push_back(y);
     }
-    for (int i = 0; i < n; i++) 
+    for (int i = 0; i < n; i++)
         if (used[i] == 0)
             dfs(i);
     while (!answer.empty()) {
-            cout << answer.top() + 1 << " ";
-            answer.pop();
+        cout << answer.top() + 1 << " ";
+        answer.pop();
     }
     cout << '\n';
     return 0;
